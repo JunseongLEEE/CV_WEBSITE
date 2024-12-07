@@ -1,0 +1,145 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="portfolio-3.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Yom2emeet : scheduling applicatin for Korean college student 
+
+            </h1>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-sm-8 col-md-8 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div class="item">
+                        <img src="img/portfolio/full/1.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/2.jpg" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/3.jpg" alt="" /> -->
+                    </div>
+                </div>
+
+                <div class="portfolio-page-video embed-responsive embed-responsive-16by9" style="display: flex;">
+                    <img src="image_jun /yon2meet/intro.png" width="800px" />
+                    
+                </div>
+                
+
+            
+            </div>
+
+            <div class="col-sm-4 col-md-4 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Description</h3>
+                    </div>
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user"></i> Yom2emeet : scheduling applicatino for Korean college student </p></li>
+                        <li><p><i class="fa fa-globe"></i> <a href="https://github.com/JunseongLEEE/yon2meet-model-server/tree/main?tab=readme-ov-file" target="_blank">GITHUB</a></p></li>
+                        <li><p><i class="fa fa-calendar"></i> 2024 12 05</p></li>
+                    </ul>
+
+                    <p class="text-justify"> Implemented automatic scheduling detection algorithm
+                    </p>
+                    <!-- /Project Description -->
+
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Process pipeline : detection Everytime schedule image</h3>
+                        </div>
+                        <ul class="tags">
+                            <li>
+                                1. 에브리타임 시간표에 존재하는 비대면 Row 제거 (Remove needless info from Everytime image)
+                                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                                    <img src="image_jun /yon2meet/1.png" width="600px" />
+                                </div>
+                            </li>
+                            
+                            <li>
+                                Result of 1.<br>
+                                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                                    <img src="image_jun /yon2meet/2.png" width="600px" />
+                                </div>
+                            </li>
+                            
+                            <li>
+                                2. Gridline detection using Canny edge detection, Hough transform<br><br>
+                                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                                    <img src="image_jun /yon2meet/3.png" width="600px" />
+                                </div>
+                            </li>
+                            
+                            <li>
+                                3. To detect the cell size, filtering the distance of grid line<br><br>
+                                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                                    <img src="image_jun /yon2meet/4.png" width="600px" />
+                                </div>
+                            </li>
+
+                            <li>
+                                4. Using Quantizated EfficienNet, Detect start time<br><br>
+                                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                                    <img src="image_jun /yon2meet/5.png" width="600px" />
+                                    <img src="image_jun /yon2meet/10.png" width="600px" />
+                                
+                                </div>
+                            </li>
+
+                            <li>
+                                4. Using information of 1~4, Calculate the cell size<br><br>
+                                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                                    <img src="image_jun /yon2meet/6.png" width="600px" />
+                                </div>
+                            </li>
+
+                            <li>
+                                5. Extract the day, time of personalized image<br><br>
+                                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                                    <img src="image_jun /yon2meet/7.png" width="600px" />
+                                    <img src="image_jun /yon2meet/8.png" width="600px" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Model training</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a>Use Vessl AI-yonsei GPU</a></li>
+                            <li><a href="image_jun /yon2meet/yon2meet_최종.pdf" download="training_guide.pdf" class="pdf-link">For specific info, Read this PDF</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- /Technology -->
+
+                    <!-- Share Buttons -->
+                    <!-- <div class="btn-group share-buttons">
+                        <div class="block-title">
+                            <h3>Share</h3>
+                        </div>
+                        <a href="#" target="_blank" class="btn"><i class="fab fa-facebook-f"></i> </a>
+                        <a href="#" target="_blank" class="btn"><i class="fab fa-twitter"></i> </a>
+                        <a href="#" target="_blank" class="btn"><i class="fab fa-dribbble"></i> </a>
+                    </div> -->
+                    <!-- /Share Buttons -->
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>
